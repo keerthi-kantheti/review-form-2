@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="form2.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Your Review
+	</title>
+    <link rel="stylesheet" href="form2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbG+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMM+rV" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+    <div class="review-form-bg-container">
+    
+	<h1 class="p-2">Review Form</h1>
+    
+    
+    
+	<form id="form" class="review-form-container">
+        <!-- Details -->
+		<div class="m-3">
+			<label for="placementText">
+				<strong>Regarding placement cell<span class="red-star">*</span>:</strong>
+			</label>
+
+			<!-- Input Type Text -->
+            <textarea id="placementText" class="form-control w-75" rows="3" cols="18" placeholder="Enter your review here"></textarea>
+
+		</div>
+
+		<div class="m-3">
+			<label for="infra" id="labelInfra ">
+				<strong>About your Course & Hostel <span class="red-star">*</span></strong>
+			</label>
+
+			<!-- Input Type infra-->
+            <textarea id="infra" class="form-control w-75" rows="3" cols="18" placeholder="Enter your review here"></textarea>
+            </textarea>
+		</div>
+
+		<div class="m-3">
+			<label for="review" id="label-age"><strong>
+				Faculty, Curriculum & Exams for your course <span class="red-star">*</span></strong>
+			</label>
+
+			<!-- Input Type Text -->
+            <textarea id="review" class="form-control w-75" rows="3" cols="18" placeholder="Enter your review here"></textarea>
+		</div>
+
+
+		<div class="m-3 w-50">
+			<label for="labelRole" id="labelRole"><strong>
+				Are you a student?<span class="red-star">*</span></strong>
+			</label>
+			
+			<!-- Dropdown options -->
+			<select class="form-control" id="labelRole"  class="form-control">
+				<option value="student" selected>student</option>
+				<option value="lecture">lecture</option>
+				<option value="parent">parent</option>
+			</select>
+		</div>
+
+		<div class="m-3">
+			<p><strong>would you recommend your college to others? <span class="red-star">*</span></strong></p>
+                <input type="radio" name="recommending" id="yes" value="yes"  />
+                <label for="yes">Yes</label>
+                <input type="radio" name="recommending" id="no" value="no" class="ml-2" checked/>
+                <label for="no">No</label>
+		</div>
+		<div class="m-3">
+			<h6><strong>Campus Life</strong><lighter>(ceck all that Apply)<span class="red-star">*</span></lighter></h6>
+			<!-- Input Type Checkbox -->
+			<div class="d-flex flex-column justify-content-start">
+				<div>
+					
+						<input type="checkbox"
+							id="inp-1">Sports</input>
+						<label for="inp-1" class="m-1"></label>
+					<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-2">INNOVATION</input>
+					<label for="inp-2" class="m-1"></label>
+					<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-3">CANTEEN</input>
+					<label for="inp-3" class="m-1"></label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-4">TECHINCAL LABS</input>
+					<label for="inp-4" class="m-1"></label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-5">TED-X</input>
+					<label for="inp-5" class="m-1"></label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-6">EVENTS</input>
+					<label for="inp-6" class="m-1"></label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-7">PEP-TALKS</input>
+					<label for="inp-7" class="m-1"></label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						for="inp-8"/>
+					<label for="inp-8" class="m-1">INTERACTIONS</label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-9"/>
+					<label for="inp-9" class="m-1">WHEELER-PARKING</label>
+				<br/>
+				</div>
+				<div>
+					
+					<input type="checkbox"
+						id="inp-10" class="p-1" order="0"/>
+					<label for="inp-10" class="m-1" order="1">VIEW POINT</label>
+						
+				<br/>
+				</div>
+			</div>
+		</div>
+
+		<div class="m-3">
+			<label for="comment">
+				<strong>Any other information that you would like to share</strong>
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea id="comment" class="form-control w-75" rows="3" cols="18" placeholder="Enter your review here"></textarea>
+		</div>
+        <!--submitbutton-->
+        <button class="btn btn-primary m-3" type="submit">Submit</button>
+	</form>
+    </div>
+    
+</body>
+
+</html>
